@@ -30,3 +30,6 @@ Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\bin\Debug\
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Debug\OPCAgent.csprojResolveAssemblyReference.cache
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Debug\EACIIT.OPCAgent.Properties.Resources.resources
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Debug\OPCAgent.csproj.GenerateResource.Cache
+Z:\otherapp\opcagent\ConsoleApplication1\bin\Debug\EACIIT.OPCAgent.exe.config
+Z:\otherapp\opcagent\ConsoleApplication1\obj\Debug\EACIIT.OPCAgent.exe
+Z:\otherapp\opcagent\ConsoleApplication1\obj\Debug\EACIIT.OPCAgent.pdb

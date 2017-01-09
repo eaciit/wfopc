@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\objects.txt" />
+    <Content Include="assets\suzlon_tags.txt" />
     <Content Include="assets\tags.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
