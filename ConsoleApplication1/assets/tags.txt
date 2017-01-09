@@ -1,0 +1,4 @@
+﻿ActivePower_kW
+ActivePowerCurtailmentSource
+String
+Int4
