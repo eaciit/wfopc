@@ -1,0 +1,363 @@
+﻿Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Remove InstallState file because there are no installers.
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Remove InstallState file because there are no installers.
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Attempt to stop service EcOPCDataReader.
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Warning: The source EcOPCDataReader is not registered on the local machine.
+Service EcOPCDataReader is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Attempt to stop service EcOPCDataReader.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Uninstalling assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Removing EventLog source EcOPCDataReader.
+Service EcOPCDataReader is being removed from the system...
+Service EcOPCDataReader was successfully removed from the system.
+Installing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog
+Installing service EcOPCDataReader...
+Service EcOPCDataReader has been successfully installed.
+Creating EventLog source EcOPCDataReader in log Application...
+Committing assembly 'D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+   logfile = D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.InstallLog

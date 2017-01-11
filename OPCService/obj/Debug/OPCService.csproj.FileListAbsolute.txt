@@ -1,0 +1,17 @@
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe.config
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.pdb
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\TitaniumAS.Opc.Client.dll
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\TitaniumAS.Opc.Client.pdb
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.exe
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.pdb
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.ProjectInstaller.resources
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.csproj.GenerateResource.Cache
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.Core.dll
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.dll
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.pdb
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.xml
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.Core.pdb
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.Core.xml
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.Service1.resources
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.csprojResolveAssemblyReference.cache

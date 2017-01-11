@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPCAgent", "ConsoleApplication1\OPCAgent.csproj", "{73243368-D579-411A-B144-A4C0C166E8EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPCService", "OPCService\OPCService.csproj", "{2E94A658-C5A0-4A3B-8BA3-AC045F7D5D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{73243368-D579-411A-B144-A4C0C166E8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73243368-D579-411A-B144-A4C0C166E8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73243368-D579-411A-B144-A4C0C166E8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E94A658-C5A0-4A3B-8BA3-AC045F7D5D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E94A658-C5A0-4A3B-8BA3-AC045F7D5D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E94A658-C5A0-4A3B-8BA3-AC045F7D5D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E94A658-C5A0-4A3B-8BA3-AC045F7D5D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
