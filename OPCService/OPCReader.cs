@@ -23,6 +23,7 @@ namespace OPCService
     {
         protected OPCAgentConfig cfg;
         protected OpcDaServer server;
+        protected List<string> ErrorTags;
 
         public void Init()
         {
@@ -32,9 +33,11 @@ namespace OPCService
             cfg.Period = Convert.ToInt32(Common.GetConfig("period"));
             cfg.AssetFolder = Common.GetConfig("assetfolder");
 
+            ErrorTags = new List<string>();
+
             if (!String.IsNullOrEmpty(cfg.Host))
             {
-                Log.Write(cfg.OPCName + ":" + cfg.Host, LogType.WRITE);
+                //Log.Write(cfg.OPCName + ":" + cfg.Host, LogType.WRITE);
                 server = new OpcDaServer(UrlBuilder.Build(cfg.OPCName, cfg.Host));
                 server.Connect();
                 BuildSubcribtion(server, cfg);
@@ -61,7 +64,8 @@ namespace OPCService
             {
                 string objectFilePath = cfg.AssetFolder + "\\objects.txt";
                 string tagFilePath = cfg.AssetFolder + "\\tags.txt";
-                string objLine, tagLine;
+                string tagErrorFilePath = cfg.AssetFolder + "\\tags-error.txt";
+                string objLine, tagLine, tagErrorLine;
 
                 List<String> objs = new List<string>();
 
@@ -84,6 +88,18 @@ namespace OPCService
                 }
                 fileTag.Close();
 
+                System.IO.StreamReader fileTagError = new System.IO.StreamReader(tagErrorFilePath);
+                while ((tagErrorLine = fileTagError.ReadLine()) != null)
+                {
+                    tagErrorLine = tagErrorLine.Trim();
+                    if (!tagErrorLine.StartsWith("//"))
+                    {
+                        tags.Add(tagErrorLine);
+                        ErrorTags.Add(tagErrorLine);
+                    }
+                }
+                fileTagError.Close();
+
                 foreach (String obj in objs)
                 {
                     List<string> objtags = new List<string>();
@@ -94,7 +110,7 @@ namespace OPCService
                     }
                     OpcDaGroup g = Subscribe(obj, server, objtags.ToArray());
                     string msg = "Subscribe for " + obj;
-                    Log.Write(msg, LogType.SUBSCRIBE);
+                    //Log.Write(msg, LogType.SUBSCRIBE);
                 }
             }
             catch (Exception exc)
@@ -139,9 +155,22 @@ namespace OPCService
         {
             foreach (var v in e.Values)
             {
-                Log.Write(String.Format("Getting value for {0} at {1}", v.Item.ItemId, v.Timestamp), LogType.WRITE);
+                bool isError = false;
+                if (ErrorTags.Count > 0)
+                {
+                    foreach (string err in ErrorTags)
+                    {
+                        if (v.Item.ItemId.ToUpper().Trim().Contains(err.ToUpper().Trim()))
+                        {
+                            isError = true;
+                            break;
+                        }
+                    }
+                }
+
+                //Log.Write(String.Format("Getting value for {0} at {1}", v.Item.ItemId, v.Timestamp), LogType.WRITE);
                 string data = String.Format("{2}|{0}|{1}", v.Timestamp, v.Item.ItemId, v.Value);
-                Result.Output(data, v.Timestamp);
+                Result.Output(data, v.Timestamp, isError);
             }
         }
     }

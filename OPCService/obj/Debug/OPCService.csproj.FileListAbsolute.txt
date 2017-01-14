@@ -14,4 +14,7 @@ D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.xml
 D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.Core.pdb
 D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\Common.Logging.Core.xml
 D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.Service1.resources
-D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.csprojResolveAssemblyReference.cache
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.exe.manifest
+D:\Works\2017\WindFarmOPC\OPCService\bin\Debug\OPCService.application
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.exe.manifest
+D:\Works\2017\WindFarmOPC\OPCService\obj\Debug\OPCService.application

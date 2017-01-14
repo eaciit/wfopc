@@ -30,3 +30,18 @@ Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\bin\Releas
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Release\OPCAgent.csprojResolveAssemblyReference.cache
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Release\EACIIT.OPCAgent.Properties.Resources.resources
 Z:\Documents\Visual Studio 2015\Projects\OPCAgent\ConsoleApplication1\obj\Release\OPCAgent.csproj.GenerateResource.Cache
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\EACIIT.OPCAgent.exe.config
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\EACIIT.OPCAgent.exe
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\EACIIT.OPCAgent.pdb
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.Core.dll
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.dll
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.pdb
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.xml
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.Core.pdb
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\Common.Logging.Core.xml
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\bin\Release\TitaniumAS.Opc.Client.pdb
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\obj\Release\OPCAgent.csprojResolveAssemblyReference.cache
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\obj\Release\EACIIT.OPCAgent.Properties.Resources.resources
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\obj\Release\OPCAgent.csproj.GenerateResource.Cache
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\obj\Release\EACIIT.OPCAgent.exe
+D:\Works\2017\WindFarmOPC\ConsoleApplication1\obj\Release\EACIIT.OPCAgent.pdb

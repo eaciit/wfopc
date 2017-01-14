@@ -1,0 +1,5 @@
+﻿ReturnHeartbeat
+TurbineState
+AlarmCode_DetectTime
+AlarmCode
+ErrorState
