@@ -13,7 +13,13 @@ namespace OPCService
         public static string GetConfig(string key)
         {
             var config = ConfigurationManager.OpenExeConfiguration(Assembly.GetExecutingAssembly().Location);
-            return config.AppSettings.Settings[key].Value;
+            var retval = config.AppSettings.Settings[key].Value;
+            if (String.IsNullOrEmpty(retval))
+            {
+                retval = "";
+            }
+
+            return retval;
         }
     }
 }

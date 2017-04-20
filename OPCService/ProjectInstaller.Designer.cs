@@ -40,8 +40,8 @@
             // serviceInstaller1
             // 
             this.serviceInstaller1.Description = "Eaciit Tools to read and extract data from the OPC Server";
-            this.serviceInstaller1.DisplayName = "EC OPC Data Reader";
-            this.serviceInstaller1.ServiceName = "EcOPCDataReader";
+            this.serviceInstaller1.DisplayName = "EC OPC Services";
+            this.serviceInstaller1.ServiceName = "EcOPCServices";
             // 
             // ProjectInstaller
             // 

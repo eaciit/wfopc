@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OPCService
 {
-    public enum LogType { START, STOP, ERROR, SUBSCRIBE, WRITE };
+    public enum LogType { START, STOP, WARNING, ERROR, SUBSCRIBE, WRITE, OTHER };
     public class Log
     {
         public static void Write(string msg, LogType type = LogType.WRITE)
@@ -33,16 +33,19 @@ namespace OPCService
                     log += " : starting service";
                     break;
                 case LogType.STOP:
-                    log += " : stoping service";
+                    log += " : stopping service";
                     break;
                 case LogType.ERROR:
-                    log += " : error raise";
+                    log += " : error occured";
+                    break;
+                case LogType.WARNING:
+                    log += " : warning";
                     break;
                 case LogType.WRITE:
                     log += " : read and write data";
                     break;
                 case LogType.SUBSCRIBE:
-                    log += " : subscribe ";
+                    log += " : subscribe";
                     break;
                 default:
                     log += " : another logs";

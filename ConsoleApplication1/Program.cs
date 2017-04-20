@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -119,9 +119,33 @@ namespace EACIIT.OPCAgent
 
         private static void Group_ValuesChanged(object sender, OpcDaItemValuesChangedEventArgs e)
         {
-            foreach(var v in e.Values)
+            string outpath = System.Configuration.ConfigurationManager.AppSettings["datapath"];
+            outpath = Path.Combine(outpath, DateTime.Today.ToString("yyyyMM"), DateTime.Today.ToString("dd"));
+
+            DirectoryInfo di = new DirectoryInfo(outpath);
+            if (!di.Exists)
             {
-                Console.WriteLine("{2}|{0}|{1}", v.Timestamp, v.Item.ItemId, v.Value);
+                di.Create();
+            }
+
+            StreamWriter sw = null;
+            string tdir = "data";
+            string fname = String.Format("data_{0}.csv", DateTime.Now.ToString("yyyyMMdd_HHmmss_ffffff"));
+            string fTarget = Path.Combine(di.FullName, fname);
+            try
+            {
+                using (sw = File.AppendText(fTarget))
+                {
+                    foreach (var v in e.Values)
+                    {
+                        string data = String.Format("{2}|{0}|{1}", v.Timestamp, v.Item.ItemId, v.Value);
+                        sw.WriteLine(data);
+                    }
+                }
+            }
+            catch(Exception em)
+            {
+                Console.WriteLine(em.Message);
             }
         }
     }

@@ -1,13 +1,21 @@
 ﻿using System;
+using System.Collections.Concurrent; 
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Configuration;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+
+using Newtonsoft.Json;
 
 using TitaniumAS.Opc.Client.Common;
 using TitaniumAS.Opc.Client.Da;
 using TitaniumAS.Opc.Client.Da.Browsing;
+using System.Net;
+using System.Net.Http.Headers;
+using System.IO;
 
 namespace OPCService
 {
@@ -24,7 +32,7 @@ namespace OPCService
         protected OPCAgentConfig cfg;
         protected OpcDaServer server;
         protected List<string> ErrorTags;
-
+        
         public void Init()
         {
             cfg = new OPCAgentConfig();
@@ -37,11 +45,9 @@ namespace OPCService
 
             if (!String.IsNullOrEmpty(cfg.Host))
             {
-                //Log.Write(cfg.OPCName + ":" + cfg.Host, LogType.WRITE);
                 server = new OpcDaServer(UrlBuilder.Build(cfg.OPCName, cfg.Host));
                 server.Connect();
                 BuildSubcribtion(server, cfg);
-                //System.Threading.Thread.Sleep(cfg.Period * 10);
             }
             else
             {
@@ -49,10 +55,32 @@ namespace OPCService
             }
         }
 
+        bool IsErrorTags(string tag)
+        {
+            bool isError = false;
+            string[] errorTags = new string[] { "ALARMCODE", "TURBINESTATE", "RETURNHEARTBEAT" };
+            foreach (string item in errorTags)
+            {
+                if (tag.Trim().ToUpper().Contains(item))
+                {
+                    isError = true;
+                    break;
+                }
+            }
+
+            return isError;
+        }
+
         public void Disconnect()
         {
             if (server != null)
             {
+                //try
+                //{   
+                //    worker.CancelAsync();
+                //    worker.Dispose();
+                //}
+                //catch { }
                 server.Disconnect();
             }
         }
@@ -142,8 +170,11 @@ namespace OPCService
             {
                 if (res.Error.Failed)
                 {
-                    string err = String.Format("Error adding item {0}: {1}", defs[idx].ItemId, res.Error);
-                    Log.Write(err, LogType.ERROR);
+                    if (!res.Error.ToString().Contains("The item ID is not defined in the server address space"))
+                    {
+                        string err = String.Format("Error adding item {0}: {1}", defs[idx].ItemId, res.Error);
+                        Log.Write(err, LogType.WARNING);
+                    }
                 }
                 idx++;
             }
@@ -153,25 +184,167 @@ namespace OPCService
 
         protected void Group_ValuesChanged(object sender, OpcDaItemValuesChangedEventArgs e)
         {
-            foreach (var v in e.Values)
+            OpcDaItemValue[] values = e.Values;
+
+            if (values.Length > 0)
             {
-                bool isError = false;
-                if (ErrorTags.Count > 0)
                 {
-                    foreach (string err in ErrorTags)
+                    // send data to the server
+                    string currTs = values[0].Timestamp.ToString("yyyy-MM-dd HH:mm:ss");
+                    PrepareSendData(values, currTs);
+
+                    // send data as file in local disk
+                    WriteToFile(values);
+                }
+            }
+        }
+
+        void WriteToFile(OpcDaItemValue[] values)
+        {
+            StringBuilder dataValue = new StringBuilder(),
+                          errorValue = new StringBuilder();
+            string dataDelim = "",
+                   errorDelim = "",
+                   ts = "";
+            DateTimeOffset currTimeStamp = DateTime.Now;
+            if (values.Length > 0)
+            {
+                foreach (var v in values)
+                {
+                    string groupName = v.Item.Group.Name;
+                    string data = String.Format("{0},{1},{2}", v.Timestamp.ToString("yyyy-MM-dd HH:mm:ss"), v.Item.ItemId, Convert.ToDouble(v.Value));
+                    currTimeStamp = v.Timestamp;
+
+                    bool isError = false;
+                    if (ErrorTags.Count > 0)
                     {
-                        if (v.Item.ItemId.ToUpper().Trim().Contains(err.ToUpper().Trim()))
+                        foreach (string err in ErrorTags)
                         {
-                            isError = true;
-                            break;
+                            if (v.Item.ItemId.ToUpper().Trim().Contains(err.ToUpper().Trim()))
+                            {
+                                isError = true;
+                                break;
+                            }
                         }
+                    }
+
+                    if (isError)
+                    {
+                        errorValue.AppendFormat("{0}{1}", errorDelim, data);
+                        errorDelim = "\n";
+                    }
+                    else
+                    {
+                        dataValue.AppendFormat("{0}{1}", dataDelim, data);
+                        dataDelim = "\n";
                     }
                 }
 
-                //Log.Write(String.Format("Getting value for {0} at {1}", v.Item.ItemId, v.Timestamp), LogType.WRITE);
-                string data = String.Format("{2}|{0}|{1}", v.Timestamp, v.Item.ItemId, v.Value);
-                Result.Output(data, v.Timestamp, isError);
+                string outpath = Common.GetConfig("datapath");
+                outpath = Path.Combine(outpath, currTimeStamp.ToString("yyyyMM"), currTimeStamp.ToString("dd"), currTimeStamp.ToString("HH"));
+                ts = currTimeStamp.ToString("yyyyMMdd_HHmmss_ffff");
+                string tsErr = currTimeStamp.ToString("yyyyMMdd");
+
+                string fdata = String.Format("data_{0}.csv", ts);
+                string ferror = String.Format("alert_{0}.csv", tsErr);
+
+                DirectoryInfo di = new DirectoryInfo(outpath);
+                if (!di.Exists)
+                {
+                    di.Create();
+                }
+
+                if (dataValue.Length > 0)
+                {
+                    Result.Output(Path.Combine(di.FullName, fdata), dataValue.ToString());
+                }
+
+                if (errorValue.Length > 0)
+                {
+                    Result.Output(Path.Combine(di.FullName, ferror), errorValue.ToString());
+                }
             }
+        }
+
+        void PrepareSendData(OpcDaItemValue[] values, string currTimeStamp)
+        {
+            try
+            {
+                if (values.Length > 0)
+                {
+                    var listValues = new List<ValueHelper>();
+                    foreach (var v in values)
+                    {
+                        if (!String.IsNullOrEmpty(v.Item.ItemId.Trim()))
+                        {
+                            string[] items = v.Item.ItemId.Split('.');
+                            if (items.Length > 3)
+                            {
+                                string turbine = items[2];
+                                string tag = items[4];
+
+                                string sTimestamp = v.Timestamp.ToString("yyyy-MM-dd HH:mm:ss");
+                                string sValue = (v.Value == null ? "-999999.00" : Convert.ToString(v.Value));
+
+                                listValues.Add(new ValueHelper()
+                                {
+                                    TimeStamp = sTimestamp,
+                                    Turbine = turbine,
+                                    Tag = tag,
+                                    Value = Convert.ToDouble(sValue)
+                                });
+                            }
+                        }
+                    }
+
+                    if (listValues.Count > 0)
+                    {
+                        JsonSerializerSettings set = new JsonSerializerSettings();
+                        string data = JsonConvert.SerializeObject(listValues, Formatting.None, set);
+                        SendData(data);
+                    }
+                }
+            }
+            catch (Exception em)
+            {
+                Log.Write("Error exception send data values : " + em.Message + " :: " + em.StackTrace.ToString(), LogType.ERROR);
+            }
+        }
+
+        async void SendData(string data)
+        {
+            string url = "http://orangewfm-dev.eaciitapp.com/hfd/";
+            //string url = "http://ostrowfm-realtime.eaciitapp.com/hfd/";
+            //string url = "http://localhost:8018/hfd/";
+
+            string targetDir = "pushdata";
+            string fixUrl = url + targetDir;
+
+            try
+            {
+                // push data to server
+                using (var client = new HttpClient())
+                {
+                    var request = new Dictionary<string, string>
+                        {
+                            { "Data", data },
+                        };
+
+                    var content = new FormUrlEncodedContent(request);
+                    var response = await client.PostAsync(fixUrl, content);
+                }
+            }
+            catch (Exception em)
+            {
+                Log.Write("Error sending data : " + em.Message + "::" + em.StackTrace.ToString(), LogType.ERROR);
+            }
+        }
+
+        internal class ValueHelper {
+            public string TimeStamp { get; set; }
+            public string Turbine { get; set; }            
+            public string Tag { get; set; }
+            public double Value { get; set; }
         }
     }
 }
